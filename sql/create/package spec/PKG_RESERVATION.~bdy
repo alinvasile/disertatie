@@ -1,0 +1,277 @@
+create or replace package PKG_RESERVATION is
+
+  -- Author  : VASILE ALIN
+  -- Created : 02.04.2009 22:19:25
+  -- Purpose : Exposes basic reservation operations.
+  
+  -- Public type declarations
+  -- type <TypeName> is <Datatype>;
+  
+  -- Public constant declarations
+  -- <ConstantName> constant <Datatype> := <Value>;
+
+  -- Public variable declarations
+  -- <VariableName> <Datatype>;
+
+  -- Public function and procedure declarations
+  
+  function datediff( p_what in varchar2,
+                                         p_d1   in date,
+                                         p_d2   in date ) return number;
+  
+  /*
+   * Creates a new reservation based on the details provided by the OBJ_RESERVATION argument
+   */
+  PROCEDURE make_reservation( reservationObject IN OUT OBJ_RESERVATION );
+  
+  /*
+   * Extends an existing reservation.
+   * The following text can be returned :
+   *   - [SUCCESS]
+   *   - [FAILED,<Reason text>]
+   */
+  function extend_reservation(P_RESERVATION_ID NUMBER, P_RESERVATION_TO TIMESTAMP) RETURN CHAR;
+  
+  /*
+   * Checks that a valid reservation exists based on the vehicle number.
+   * The following text can be returned :
+   *   - [VALID]
+   *   - [INVALID,<Reason text>]
+   */
+  function check_reservation(P_VEHICLE_NUMBER VARCHAR2) RETURN VARCHAR2; 
+  
+  /*
+   * Checks that a valid reservation exists based on the reservation id number.
+   * The following text can be returned :
+   *   - [VALID]
+   *   - [INVALID,<Reason text>]
+   */
+  function check_reservation(P_RESERVATION_ID NUMBER) RETURN VARCHAR2;
+  
+  /*
+   * Cancels an existing reservation, based on the vehicle number
+   * The following text can be returned :
+   *   - [SUCCESS]
+   *   - [FAILED,<Reason text>]
+   */
+  function cancel_reservation(P_VEHICLE_NUMBER VARCHAR2) RETURN VARCHAR2; 
+  
+  /*
+   * Cancels an existing reservation, based on the reservation id number.
+   * The following text can be returned :
+   *   - [SUCCESS]
+   *   - [FAILED,<Reason text>]
+   */
+  function cancel_reservation(P_RESERVATION_ID NUMBER) RETURN VARCHAR2; 
+
+end PKG_RESERVATION;
+/
+create or replace package body PKG_RESERVATION is
+
+  -- Author  : VASILE ALIN
+  -- Created : 02.04.2009 22:19:25
+  -- Purpose : Exposes basic reservation operations.
+  
+  /*
+    select datediff( 'ss', d1, d2 ) seconds from temp_view;
+    select datediff( 'mi', d1, d2 ) minutes from temp_view;
+    select datediff( 'hh', d1, d2 ) hours from temp_view;
+  */
+  function datediff( p_what in varchar2,
+                                         p_d1   in date,
+                                         p_d2   in date ) return number
+    as
+        l_result    number;
+    begin
+        select (p_d2-p_d1) *
+               decode( upper(p_what),
+                       'SS', 24*60*60, 'MI', 24*60, 'HH', 24, NULL )
+        into l_result from dual;
+ 
+       return l_result;
+   end;
+ 
+  
+  
+ /*
+  * Creates a new reservation based on the details provided by the OBJ_RESERVATION argument
+  */ 
+ procedure make_reservation( reservationObject IN OUT OBJ_RESERVATION )  IS 
+   reservationDate TIMESTAMP ; 
+   reservationIndex RESERVATION.RESERVATION_ID%TYPE;
+ BEGIN  
+   
+   reservationDate := NVL(reservationObject.RESERVATION_DATE,SYSDATE);
+   
+   SELECT SEQ_RESERVATION.NEXTVAL INTO reservationIndex FROM DUAL;
+   
+   reservationObject.RESERVATION_DATE := reservationDate;
+   reservationObject.RESERVATION_ID := reservationIndex;
+   
+   INSERT INTO RESERVATION values reservationObject;
+   
+   /* 
+   INSERT INTO 
+    RESERVATION
+     (RESERVATION_ID,RESERVATION_DATE,RESERVATION_FROM,RESERVATION_TO,PARKING,VEHICLE_NUMBER)
+   VALUES
+     (reservationIndex,reservationDate,reservationObject.RESERVATION_FROM,reservationObject.RESERVATION_TO,
+     reservationObject.PARKING,reservationObject.VEHICLE_NUMBER );
+     */
+     
+   
+     
+ END make_reservation;
+ 
+ /*
+  * Extends an existing reservation.
+  * The following text can be returned :
+  *   - [SUCCESS]
+  *   - [FAILED,<Reason text>]
+  */
+  function extend_reservation(P_RESERVATION_ID NUMBER, P_RESERVATION_TO TIMESTAMP) RETURN CHAR IS
+     numberOfUpdatedRecords NUMBER;     
+  BEGIN 
+       UPDATE RESERVATION 
+       SET RESERVATION_TO = P_RESERVATION_TO 
+       WHERE RESERVATION_ID = P_RESERVATION_ID;
+       --AND RESERVATION_TO >= SYSDATE;
+       
+       numberOfUpdatedRecords := SQL%ROWCOUNT ;
+       
+       IF numberOfUpdatedRecords = 0 THEN
+          RETURN '[FAILED,No valid reservation found]';
+       ELSE
+          RETURN '[SUCCESS]';
+       END IF;
+       
+  END extend_reservation;
+  
+  /*
+   * Checks that a valid reservation exists based on the vehicle number.
+   * The following text can be returned :
+   *   - [VALID]
+   *   - [INVALID,<Reason text>]
+   */
+  function check_reservation(P_VEHICLE_NUMBER VARCHAR2) RETURN VARCHAR2 IS
+    foundAuthorisation RESERVATION.RESERVATION_ID%TYPE;
+    expiryDate RESERVATION.RESERVATION_TO%type;
+  BEGIN
+    select RESERVATION_ID,RESERVATION_TO 
+    INTO foundAuthorisation,expiryDate  
+    from (
+        SELECT RESERVATION_ID,RESERVATION_TO 
+        FROM RESERVATION
+        WHERE VEHICLE_NUMBER = P_VEHICLE_NUMBER ORDER BY RESERVATION_TO DESC 
+    )      
+    where rownum =1   ;
+    
+    IF expiryDate < SYSDATE THEN
+       RETURN '[INVALID,Authorisation expired]';
+    END IF;
+    
+    RETURN '[VALID]';    
+    
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      RETURN '[INVALID,No authorisations found]';
+    
+  END check_reservation;
+  
+  /*
+   * Checks that a valid reservation exists based on the reservation id number.
+   * The following text can be returned :
+   *   - [VALID]
+   *   - [INVALID,<Reason text>]
+   */
+  function check_reservation(P_RESERVATION_ID NUMBER) RETURN VARCHAR2 is
+    expiryDate RESERVATION.RESERVATION_TO%type;
+  BEGIN
+    SELECT RESERVATION_TO INTO expiryDate FROM RESERVATION 
+    WHERE RESERVATION_ID = P_RESERVATION_ID;
+    
+    IF expiryDate < SYSDATE THEN
+       RETURN '[INVALID,Authorisation expired]';
+    END IF;
+    
+    RETURN '[VALID]';    
+    
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      RETURN '[INVALID,No authorisations found]';
+    
+  END check_reservation;
+  
+  /*
+   * Cancels an existing reservation, based on the vehicle number
+   * The following text can be returned :
+   *   - [SUCCESS]
+   *   - [FAILED,<Reason text>]
+   */
+  function cancel_reservation(P_VEHICLE_NUMBER VARCHAR2) RETURN VARCHAR2 is
+    foundAuthorisation RESERVATION.RESERVATION_ID%TYPE;
+    expiryDate RESERVATION.RESERVATION_TO%type;
+    elapsedSeconds NUMBER;
+  BEGIN
+    SELECT RESERVATION_ID,RESERVATION_TO INTO foundAuthorisation,expiryDate
+    from (
+      SELECT RESERVATION_ID,RESERVATION_TO
+      FROM RESERVATION 
+      WHERE VEHICLE_NUMBER = P_VEHICLE_NUMBER
+      order by RESERVATION_TO desc
+    )
+    where rownum = 1;
+    
+    SELECT datediff('ss',sysdate,RESERVATION_from) INTO elapsedSeconds
+    FROM RESERVATION WHERE RESERVATION_ID = foundAuthorisation;
+    
+    -- ALLOW MAXIMUM 1 minute FROM THE RESERVATION from DATE
+    IF elapsedSeconds > 60 THEN
+       RETURN '[INVALID,Authorisation cancel time expired ' || elapsedSeconds || ']';
+    END IF;
+    
+    DELETE FROM RESERVATION WHERE RESERVATION_ID = foundAuthorisation;
+    
+    RETURN '[SUCCESS]';
+    
+    EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      RETURN '[INVALID,No authorisations found]';
+    
+  END cancel_reservation;
+  
+  /*
+   * Cancels an existing reservation, based on the reservation id number.
+   * The following text can be returned :
+   *   - [SUCCESS]
+   *   - [FAILED,<Reason text>]
+   */
+  function cancel_reservation(P_RESERVATION_ID NUMBER) RETURN VARCHAR2 IS
+     foundAuthorisation RESERVATION.RESERVATION_ID%TYPE;
+     expiryDate RESERVATION.RESERVATION_TO%type;
+     elapsedSeconds NUMBER;
+  BEGIN
+    SELECT RESERVATION_ID,RESERVATION_TO INTO foundAuthorisation,expiryDate
+     FROM RESERVATION 
+    WHERE RESERVATION_ID = P_RESERVATION_ID;
+    
+    SELECT datediff('ss',SYSDATE,RESERVATION_from) INTO elapsedSeconds
+    FROM RESERVATION WHERE RESERVATION_ID = foundAuthorisation;
+    
+    -- ALLOW MAXIMUM 30 SECONDS
+    IF elapsedSeconds >= 30 THEN
+       RETURN '[INVALID,Authorisation cancel time expired]';
+    END IF;
+    
+    DELETE FROM RESERVATION WHERE RESERVATION_ID = foundAuthorisation;
+    
+    RETURN '[SUCCESS]';
+    
+    EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      RETURN '[INVALID,No authorisations found]';
+  END cancel_reservation;
+  
+  
+end PKG_RESERVATION;
+/

@@ -1,0 +1,1 @@
+mvn archetype:create -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=project -DartifactId=BileteParcare -DpackageName= -Dversion=1.0

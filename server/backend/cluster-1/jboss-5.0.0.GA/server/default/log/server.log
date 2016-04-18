@@ -1,0 +1,963 @@
+2009-05-30 11:28:42,865 INFO  [org.jboss.web.WebService] (main) Using RMI server codebase: http://127.0.0.1:8083/
+2009-05-30 11:28:42,940 DEBUG [org.jnp.server.NamingBeanImpl] (main) Using NamingServer: org.jnp.server.NamingServer@dd20b6
+2009-05-30 11:28:42,943 DEBUG [org.jnp.server.NamingBeanImpl] (main) Installed global NamingServer: org.jnp.server.NamingServer@dd20b6
+2009-05-30 11:28:42,954 DEBUG [org.jnp.server.NamingBeanImpl] (main) InitialContext Environment: 
+2009-05-30 11:28:42,954 DEBUG [org.jnp.server.NamingBeanImpl] (main) key=java.naming.factory.initial, value(java.lang.String)=org.jnp.interfaces.NamingContextFactory
+2009-05-30 11:28:42,954 DEBUG [org.jnp.server.NamingBeanImpl] (main) key=java.naming.factory.url.pkgs, value(java.lang.String)=org.jboss.naming:org.jnp.interfaces
+2009-05-30 11:28:52,464 INFO  [org.jboss.wsf.stack.jbws.NativeServerConfig] (main) JBoss Web Services - Stack Native Core
+2009-05-30 11:28:52,464 INFO  [org.jboss.wsf.stack.jbws.NativeServerConfig] (main) 3.0.4.SP1
+2009-05-30 11:29:17,606 INFO  [org.jboss.mx.remoting.service.JMXConnectorServerService] (main) JMX Connector server: service:jmx:rmi://127.0.0.1/jndi/rmi://127.0.0.1:1090/jmxconnector
+2009-05-30 11:29:17,849 INFO  [org.jboss.mail.MailService] (main) Mail Service bound to java:/Mail
+2009-05-30 11:29:20,379 WARN  [org.jboss.jms.server.jbosssx.JBossASSecurityMetadataStore] (main) WARNING! POTENTIAL SECURITY RISK. It has been detected that the MessageSucker component which sucks messages from one node to another has not had its password changed from the installation default. Please see the JBoss Messaging user guide for instructions on how to do this.
+2009-05-30 11:29:20,395 WARN  [org.jboss.annotation.factory.AnnotationCreator] (main) No ClassLoader provided, using TCCL: org.jboss.managed.api.annotation.ManagementComponent
+2009-05-30 11:29:20,678 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) JBossTS Transaction Service (JTA version) - JBoss Inc.
+2009-05-30 11:29:20,678 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Setting up property manager MBean and JMX layer
+2009-05-30 11:29:20,916 DEBUG [com.arjuna.ats.arjuna.logging.arjLoggerI18N] (main) [com.arjuna.ats.arjuna.recovery.TransactionStatusManager_1] - Starting service com.arjuna.ats.arjuna.recovery.ActionStatusService on port 4713
+2009-05-30 11:29:20,931 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (main) TransactionStatusManagerItem - host: 127.0.0.1 port: 4713
+2009-05-30 11:29:20,965 DEBUG [com.arjuna.ats.arjuna.logging.arjLoggerI18N] (main) [com.arjuna.ats.arjuna.recovery.TransactionStatusManager_3] - TransactionStatusManager started on port 4713 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
+2009-05-30 11:29:20,987 DEBUG [com.arjuna.ats.tsmx.logging.tsmxLogger] (main) Registering mbean for module 'arjuna'
+2009-05-30 11:29:20,993 DEBUG [com.arjuna.ats.tsmx.logging.tsmxLogger] (main) Initialising JMX agent com.arjuna.ats.internal.jbossatx.agent.LocalJBossAgentImpl
+2009-05-30 11:29:20,996 DEBUG [com.arjuna.ats.tsmx.logging.tsmxLogger] (main) Registering mbean for module 'jta'
+2009-05-30 11:29:21,000 DEBUG [com.arjuna.ats.tsmx.logging.tsmxLogger] (main) Registering mbean for module 'txoj'
+2009-05-30 11:29:21,023 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Initializing recovery manager
+2009-05-30 11:29:21,036 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (main) 
+  --- Start RecoveryActivators 
+2009-05-30 11:29:21,043 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-12) 
+  --- ExpiredEntryMonitor ----Sat, 30 May 2009 11:29:21----
+2009-05-30 11:29:21,224 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (main) [com.arjuna.ats.internal.jta.recovery.noxanodes] No XA recovery nodes specified. Will only recover saved states.
+2009-05-30 11:29:21,229 DEBUG [com.arjuna.ats.arjuna.logging.arjLoggerI18N] (main) [com.arjuna.ats.internal.arjuna.recovery.PeriodicRecovery_13] - Recovery manager listening on endpoint 127.0.0.1:4,712
+2009-05-30 11:29:21,229 DEBUG [com.arjuna.ats.arjuna.logging.arjLoggerI18N] (main) [com.arjuna.ats.internal.arjuna.recovery.ready] RecoveryManagerImple is ready on port 4,712
+2009-05-30 11:29:21,230 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Recovery manager configured
+2009-05-30 11:29:21,230 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Binding TransactionManager JNDI Reference
+2009-05-30 11:29:21,257 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (main) Starting transaction recovery manager
+2009-05-30 11:29:21,265 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:29:21>
+2009-05-30 11:29:21,265 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:29:21,266 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:29:21,354 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:29:22,030 INFO  [org.apache.coyote.http11.Http11Protocol] (main) Initializing Coyote HTTP/1.1 on http-127.0.0.1-2050
+2009-05-30 11:29:22,077 INFO  [org.apache.coyote.ajp.AjpProtocol] (main) Initializing Coyote AJP/1.3 on ajp-127.0.0.1-2059
+2009-05-30 11:29:22,078 INFO  [org.apache.catalina.core.StandardService] (main) Starting service jboss.web
+2009-05-30 11:29:22,082 INFO  [org.apache.catalina.core.StandardEngine] (main) Starting Servlet Engine: JBoss Web/2.1.1.GA
+2009-05-30 11:29:22,165 INFO  [org.apache.catalina.startup.Catalina] (main) Server startup in 223 ms
+2009-05-30 11:29:22,192 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/invoker, vfsUrl=http-invoker.sar/invoker.war
+2009-05-30 11:29:23,038 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/jbossws, vfsUrl=jbossws.sar/jbossws-management.war
+2009-05-30 11:29:23,219 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/web-console, vfsUrl=management/console-mgr.sar/web-console.war
+2009-05-30 11:29:24,504 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/C:/ealivas/work/research/disertatie/server/backend/cluster-1/jboss-5.0.0.GA/server/default/deploy/jboss-local-jdbc.rar/META-INF/ra.xml
+2009-05-30 11:29:24,527 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/C:/ealivas/work/research/disertatie/server/backend/cluster-1/jboss-5.0.0.GA/server/default/deploy/jboss-xa-jdbc.rar/META-INF/ra.xml
+2009-05-30 11:29:24,577 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/C:/ealivas/work/research/disertatie/server/backend/cluster-1/jboss-5.0.0.GA/server/default/deploy/jms-ra.rar/META-INF/ra.xml
+2009-05-30 11:29:24,610 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/C:/ealivas/work/research/disertatie/server/backend/cluster-1/jboss-5.0.0.GA/server/default/deploy/mail-ra.rar/META-INF/ra.xml
+2009-05-30 11:29:24,639 INFO  [org.jboss.resource.deployers.RARDeployment] (main) Required license terms exist, view vfszip:/C:/ealivas/work/research/disertatie/server/backend/cluster-1/jboss-5.0.0.GA/server/default/deploy/quartz-ra.rar/META-INF/ra.xml
+2009-05-30 11:29:24,773 INFO  [org.quartz.simpl.SimpleThreadPool] (main) Job execution threads will use class loader of thread: main
+2009-05-30 11:29:24,804 INFO  [org.quartz.core.QuartzScheduler] (main) Quartz Scheduler v.1.5.2 created.
+2009-05-30 11:29:24,808 INFO  [org.quartz.simpl.RAMJobStore] (main) RAMJobStore initialized.
+2009-05-30 11:29:24,808 INFO  [org.quartz.impl.StdSchedulerFactory] (main) Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2009-05-30 11:29:24,808 INFO  [org.quartz.impl.StdSchedulerFactory] (main) Quartz scheduler version: 1.5.2
+2009-05-30 11:29:24,809 INFO  [org.quartz.core.QuartzScheduler] (main) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2009-05-30 11:29:25,860 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (main) Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' to JNDI name 'java:DefaultDS'
+2009-05-30 11:29:26,234 WARN  [org.jboss.ejb3.timerservice.quartz.QuartzTimerServiceFactory] (main) sql failed: CREATE TABLE QRTZ_JOB_DETAILS(JOB_NAME VARCHAR(80) NOT NULL, JOB_GROUP VARCHAR(80) NOT NULL, DESCRIPTION VARCHAR(120) NULL, JOB_CLASS_NAME VARCHAR(128) NOT NULL, IS_DURABLE VARCHAR(1) NOT NULL, IS_VOLATILE VARCHAR(1) NOT NULL, IS_STATEFUL VARCHAR(1) NOT NULL, REQUESTS_RECOVERY VARCHAR(1) NOT NULL, JOB_DATA BINARY NULL, PRIMARY KEY (JOB_NAME,JOB_GROUP))
+2009-05-30 11:29:26,314 INFO  [org.quartz.simpl.SimpleThreadPool] (main) Job execution threads will use class loader of thread: main
+2009-05-30 11:29:26,316 INFO  [org.quartz.core.QuartzScheduler] (main) Quartz Scheduler v.1.5.2 created.
+2009-05-30 11:29:26,316 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Using db table-based data access locking (synchronization).
+2009-05-30 11:29:26,326 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Removed 0 Volatile Trigger(s).
+2009-05-30 11:29:26,327 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Removed 0 Volatile Job(s).
+2009-05-30 11:29:26,327 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) JobStoreCMT initialized.
+2009-05-30 11:29:26,328 INFO  [org.quartz.impl.StdSchedulerFactory] (main) Quartz scheduler 'JBossEJB3QuartzScheduler' initialized from an externally provided properties instance.
+2009-05-30 11:29:26,328 INFO  [org.quartz.impl.StdSchedulerFactory] (main) Quartz scheduler version: 1.5.2
+2009-05-30 11:29:26,329 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Freed 0 triggers from 'acquired' / 'blocked' state.
+2009-05-30 11:29:26,330 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2009-05-30 11:29:26,331 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Recovery complete.
+2009-05-30 11:29:26,331 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Removed 0 'complete' triggers.
+2009-05-30 11:29:26,331 INFO  [org.quartz.impl.jdbcjobstore.JobStoreCMT] (main) Removed 0 stale fired job entries.
+2009-05-30 11:29:26,334 INFO  [org.quartz.core.QuartzScheduler] (main) Scheduler JBossEJB3QuartzScheduler_$_NON_CLUSTERED started.
+2009-05-30 11:29:26,834 INFO  [org.jboss.jms.server.ServerPeer] (main) JBoss Messaging 1.4.1.GA server [0] started
+2009-05-30 11:29:27,739 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) Connector bisocket://127.0.0.1:4457 has leasing enabled, lease period 10000 milliseconds
+2009-05-30 11:29:27,740 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) org.jboss.jms.server.connectionfactory.ConnectionFactory@e4e7df started
+2009-05-30 11:29:27,741 WARN  [org.jboss.jms.server.connectionfactory.ConnectionFactoryJNDIMapper] (main) supportsFailover attribute is true on connection factory: jboss.messaging.connectionfactory:service=ClusteredConnectionFactory but post office is non clustered. So connection factory will *not* support failover
+2009-05-30 11:29:27,742 WARN  [org.jboss.jms.server.connectionfactory.ConnectionFactoryJNDIMapper] (main) supportsLoadBalancing attribute is true on connection factory: jboss.messaging.connectionfactory:service=ClusteredConnectionFactory but post office is non clustered. So connection factory will *not* support load balancing
+2009-05-30 11:29:27,746 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) Connector bisocket://127.0.0.1:4457 has leasing enabled, lease period 10000 milliseconds
+2009-05-30 11:29:27,746 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) org.jboss.jms.server.connectionfactory.ConnectionFactory@74bc70 started
+2009-05-30 11:29:27,776 INFO  [org.jboss.jms.server.destination.QueueService] (main) Queue[/queue/DLQ] started, fullSize=200000, pageSize=2000, downCacheSize=2000
+2009-05-30 11:29:27,777 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) Connector bisocket://127.0.0.1:4457 has leasing enabled, lease period 10000 milliseconds
+2009-05-30 11:29:27,777 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (main) org.jboss.jms.server.connectionfactory.ConnectionFactory@39bb36 started
+2009-05-30 11:29:27,779 INFO  [org.jboss.jms.server.destination.QueueService] (main) Queue[/queue/ExpiryQueue] started, fullSize=200000, pageSize=2000, downCacheSize=2000
+2009-05-30 11:29:28,422 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (main) Bound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' to JNDI name 'java:JmsXA'
+2009-05-30 11:29:28,486 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/, vfsUrl=ROOT.war
+2009-05-30 11:29:31,367 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:29:31>
+2009-05-30 11:29:31,367 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:29:31,367 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:29:31,367 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:29:31,723 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/bileteparcare-backend, vfsUrl=bileteparcare-backend.war
+2009-05-30 11:29:32,200 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[localhost].[/bileteparcare-backend]] (main) Initializing Spring root WebApplicationContext
+2009-05-30 11:29:32,200 INFO  [org.springframework.web.context.ContextLoader] (main) Root WebApplicationContext: initialization started
+2009-05-30 11:29:32,252 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (main) Refreshing org.springframework.web.context.support.XmlWebApplicationContext@548695: display name [Root WebApplicationContext]; startup date [Sat May 30 11:29:32 EEST 2009]; root of context hierarchy
+2009-05-30 11:29:32,337 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loading XML bean definitions from ServletContext resource [/WEB-INF/wsContext.xml]
+2009-05-30 11:29:32,340 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] (main) Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2009-05-30 11:29:32,342 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Loading schema mappings from [META-INF/spring.schemas]
+2009-05-30 11:29:32,380 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://cxf.apache.org/schemas/configuration/security.xsd=schemas/configuration/security.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://cxf.apache.org/schemas/configuration/soap.xsd=schemas/configuration/soap.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://cxf.apache.org/schemas/wsdl/http-conf.xsd=schemas/wsdl/http-conf.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://cxf.apache.org/schemas/jaxws.xsd=schemas/jaxws.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://cxf.apache.org/schemas/simple.xsd=schemas/simple.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://schemas.xmlsoap.org/wsdl/2003-02-11.xsd=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://cxf.apache.org/schemas/configuration/cxf-beans.xsd=schemas/configuration/cxf-beans.xsd, http://cxf.apache.org/schemas/ws/addressing.xsd=schemas/ws-addr-conf.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://cxf.apache.org/schemas/core.xsd=schemas/core.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://cxf.apache.org/schemas/configuration/http-conf.xsd=schemas/configuration/http-conf.xsd, http://cxf.apache.org/schemas/configuration/http-jetty.xsd=schemas/configuration/http-jetty.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://schemas.xmlsoap.org/wsdl/http/=schemas/wsdl/http.xsd, http://schemas.xmlsoap.org/wsdl/=schemas/wsdl/wsdl.xsd, http://schemas.xmlsoap.org/ws/2004/08/addressing=schemas/wsdl/addressing.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2009-05-30 11:29:32,381 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+2009-05-30 11:29:32,399 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://cxf.apache.org/schemas/core.xsd] in classpath: schemas/core.xsd
+2009-05-30 11:29:32,401 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://cxf.apache.org/schemas/configuration/cxf-beans.xsd] in classpath: schemas/configuration/cxf-beans.xsd
+2009-05-30 11:29:32,405 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://cxf.apache.org/schemas/jaxws.xsd] in classpath: schemas/jaxws.xsd
+2009-05-30 11:29:32,414 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Loading bean definitions
+2009-05-30 11:29:32,434 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2009-05-30 11:29:32,436 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] (main) Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2009-05-30 11:29:32,438 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+2009-05-30 11:29:32,460 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Loading bean definitions
+2009-05-30 11:29:32,480 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.resource.ClasspathResolver#18953fb]
+2009-05-30 11:29:32,480 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.resource.ClassLoaderResolver#e8ac88]
+2009-05-30 11:29:32,480 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.bus.spring.BusApplicationContextResourceResolver#1973602]
+2009-05-30 11:29:32,484 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.configuration.spring.SpringBeanMap#a47031]
+2009-05-30 11:29:32,485 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.configuration.spring.SpringBeanMap#1c1c532]
+2009-05-30 11:29:32,486 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.configuration.spring.SpringBeanMap#79819a]
+2009-05-30 11:29:32,488 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.transport.http.WSDLQueryHandler#12bb82b]
+2009-05-30 11:29:32,489 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loaded 20 bean definitions from location pattern [classpath:META-INF/cxf/cxf.xml]
+2009-05-30 11:29:32,489 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Imported 20 bean definitions from URL location [classpath:META-INF/cxf/cxf.xml]
+2009-05-30 11:29:32,491 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2009-05-30 11:29:32,493 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] (main) Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2009-05-30 11:29:32,495 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+2009-05-30 11:29:32,513 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Loading bean definitions
+2009-05-30 11:29:32,518 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.binding.soap.SoapVersionEditor#4766d2]
+2009-05-30 11:29:32,518 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loaded 3 bean definitions from location pattern [classpath:META-INF/cxf/cxf-extension-soap.xml]
+2009-05-30 11:29:32,518 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Imported 3 bean definitions from URL location [classpath:META-INF/cxf/cxf-extension-soap.xml]
+2009-05-30 11:29:32,518 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+2009-05-30 11:29:32,521 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] (main) Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2009-05-30 11:29:32,523 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+2009-05-30 11:29:32,540 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Loading bean definitions
+2009-05-30 11:29:32,541 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loaded 1 bean definitions from location pattern [classpath:META-INF/cxf/cxf-servlet.xml]
+2009-05-30 11:29:32,541 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Imported 1 bean definitions from URL location [classpath:META-INF/cxf/cxf-servlet.xml]
+2009-05-30 11:29:32,553 DEBUG [org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver] (main) Loaded mappings [{http://cxf.apache.org/transports/http-jetty/configuration=org.apache.cxf.transport.http_jetty.spring.NamespaceHandler, http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://cxf.apache.org/clustering=org.apache.cxf.clustering.spring.NamespaceHandler, http://cxf.apache.org/ws/addressing=org.apache.cxf.ws.addressing.spring.NamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://cxf.apache.org/transports/http/configuration=org.apache.cxf.transport.http.spring.NamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://cxf.apache.org/bindings/soap=org.apache.cxf.binding.soap.spring.NamespaceHandler, http://cxf.apache.org/simple=org.apache.cxf.frontend.spring.NamespaceHandler, http://cxf.apache.org/core=org.apache.cxf.bus.spring.NamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://cxf.apache.org/jaxws=org.apache.cxf.jaxws.spring.NamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}]
+2009-05-30 11:29:32,583 DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] (main) Using generated bean name [cxf:logging#152701c] for nested custom element 'cxf:logging'
+2009-05-30 11:29:32,585 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Overriding bean definition for bean 'cxf': replacing [Generic bean: class [org.apache.cxf.bus.CXFBusImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [META-INF/cxf/cxf.xml]] with [Generic bean: class [org.apache.cxf.bus.CXFBusImpl]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2009-05-30 11:29:32,613 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] (main) Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@178069d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@178069d]; startup date [Sat May 30 11:29:32 EEST 2009]; root of context hierarchy
+2009-05-30 11:29:32,614 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loading XML bean definitions from class path resource [appContext.xml]
+2009-05-30 11:29:32,617 DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] (main) Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2009-05-30 11:29:32,619 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Loading schema mappings from [META-INF/spring.schemas]
+2009-05-30 11:29:32,630 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://cxf.apache.org/schemas/configuration/security.xsd=schemas/configuration/security.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://cxf.apache.org/schemas/configuration/soap.xsd=schemas/configuration/soap.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://cxf.apache.org/schemas/wsdl/http-conf.xsd=schemas/wsdl/http-conf.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://cxf.apache.org/schemas/jaxws.xsd=schemas/jaxws.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://cxf.apache.org/schemas/simple.xsd=schemas/simple.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://schemas.xmlsoap.org/wsdl/2003-02-11.xsd=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://cxf.apache.org/schemas/configuration/cxf-beans.xsd=schemas/configuration/cxf-beans.xsd, http://cxf.apache.org/schemas/ws/addressing.xsd=schemas/ws-addr-conf.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://cxf.apache.org/schemas/core.xsd=schemas/core.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://cxf.apache.org/schemas/configuration/http-conf.xsd=schemas/configuration/http-conf.xsd, http://cxf.apache.org/schemas/configuration/http-jetty.xsd=schemas/configuration/http-jetty.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://schemas.xmlsoap.org/wsdl/http/=schemas/wsdl/http.xsd, http://schemas.xmlsoap.org/wsdl/=schemas/wsdl/wsdl.xsd, http://schemas.xmlsoap.org/ws/2004/08/addressing=schemas/wsdl/addressing.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2009-05-30 11:29:32,630 DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] (main) Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+2009-05-30 11:29:32,647 DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] (main) Loading bean definitions
+2009-05-30 11:29:32,649 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loaded 3 bean definitions from location pattern [appContext.xml]
+2009-05-30 11:29:32,649 INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] (main) Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@178069d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@ef0a4f
+2009-05-30 11:29:32,649 DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] (main) 3 beans defined in org.springframework.context.support.ClassPathXmlApplicationContext@178069d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@178069d]; startup date [Sat May 30 11:29:32 EEST 2009]; root of context hierarchy
+2009-05-30 11:29:32,681 DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] (main) Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@1d7dfda]
+2009-05-30 11:29:32,686 DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] (main) Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@974bf0]
+2009-05-30 11:29:32,687 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ef0a4f: defining beans [dataSource,transactionManager,repository]; root of factory hierarchy
+2009-05-30 11:29:32,689 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'dataSource'
+2009-05-30 11:29:32,691 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'dataSource'
+2009-05-30 11:29:32,737 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2009-05-30 11:29:32,764 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'dataSource'
+2009-05-30 11:29:32,764 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'transactionManager'
+2009-05-30 11:29:32,764 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'transactionManager'
+2009-05-30 11:29:32,775 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+2009-05-30 11:29:32,775 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'dataSource'
+2009-05-30 11:29:32,785 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Invoking afterPropertiesSet() on bean with name 'transactionManager'
+2009-05-30 11:29:32,785 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'transactionManager'
+2009-05-30 11:29:32,785 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'repository'
+2009-05-30 11:29:32,785 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'repository'
+2009-05-30 11:29:32,788 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'repository' to allow for resolving potential circular references
+2009-05-30 11:29:32,788 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'dataSource'
+2009-05-30 11:29:32,807 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'transactionManager'
+2009-05-30 11:29:32,833 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Invoking afterPropertiesSet() on bean with name 'repository'
+2009-05-30 11:29:32,833 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'repository'
+2009-05-30 11:29:32,833 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'repository'
+2009-05-30 11:29:32,841 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CancelReservationByReservationNumber] (main) Compiled stored procedure. Call string is [{? = call PKG_RESERVATION.cancel_reservation(?)}]
+2009-05-30 11:29:32,842 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CancelReservationByReservationNumber] (main) RdbmsOperation with SQL [PKG_RESERVATION.cancel_reservation] compiled
+2009-05-30 11:29:32,843 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CancelReservationByVehicleNumber] (main) Compiled stored procedure. Call string is [{? = call PKG_RESERVATION.cancel_reservation(?)}]
+2009-05-30 11:29:32,843 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CancelReservationByVehicleNumber] (main) RdbmsOperation with SQL [PKG_RESERVATION.cancel_reservation] compiled
+2009-05-30 11:29:32,844 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CheckReservationByReservationNumber] (main) Compiled stored procedure. Call string is [{? = call PKG_RESERVATION.check_reservation(?)}]
+2009-05-30 11:29:32,844 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CheckReservationByReservationNumber] (main) RdbmsOperation with SQL [PKG_RESERVATION.check_reservation] compiled
+2009-05-30 11:29:32,845 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CheckReservationByVehicleNumber] (main) Compiled stored procedure. Call string is [{? = call PKG_RESERVATION.check_reservation(?)}]
+2009-05-30 11:29:32,845 DEBUG [com.alin.disertatie.bileteonline.method.reservation.CheckReservationByVehicleNumber] (main) RdbmsOperation with SQL [PKG_RESERVATION.check_reservation] compiled
+2009-05-30 11:29:32,848 DEBUG [com.alin.disertatie.bileteonline.method.reservation.MakeReservation] (main) Compiled stored procedure. Call string is [{call PKG_RESERVATION.make_reservation(?)}]
+2009-05-30 11:29:32,849 DEBUG [com.alin.disertatie.bileteonline.method.reservation.MakeReservation] (main) RdbmsOperation with SQL [PKG_RESERVATION.make_reservation] compiled
+2009-05-30 11:29:32,849 DEBUG [com.alin.disertatie.bileteonline.method.reservation.ExtendReservation] (main) Compiled stored procedure. Call string is [{? = call PKG_RESERVATION.extend_reservation(?, ?)}]
+2009-05-30 11:29:32,850 DEBUG [com.alin.disertatie.bileteonline.method.reservation.ExtendReservation] (main) RdbmsOperation with SQL [PKG_RESERVATION.extend_reservation] compiled
+2009-05-30 11:29:32,851 DEBUG [com.alin.disertatie.bileteonline.method.charging.ComputePrice] (main) Compiled stored procedure. Call string is [{? = call PKG_CHARGING.FN_CALC_PRICE(?, ?)}]
+2009-05-30 11:29:32,851 DEBUG [com.alin.disertatie.bileteonline.method.charging.ComputePrice] (main) RdbmsOperation with SQL [PKG_CHARGING.FN_CALC_PRICE] compiled
+2009-05-30 11:29:32,852 DEBUG [com.alin.disertatie.bileteonline.method.charging.Charge] (main) Compiled stored procedure. Call string is [{? = call PKG_CHARGING.FN_CHARGE(?, ?)}]
+2009-05-30 11:29:32,852 DEBUG [com.alin.disertatie.bileteonline.method.charging.Charge] (main) RdbmsOperation with SQL [PKG_CHARGING.FN_CHARGE] compiled
+2009-05-30 11:29:32,853 DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] (main) Loaded 25 bean definitions from location pattern [WEB-INF/wsContext.xml]
+2009-05-30 11:29:32,853 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (main) Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@548695]: org.springframework.beans.factory.support.DefaultListableBeanFactory@15b110e
+2009-05-30 11:29:32,853 DEBUG [org.springframework.web.context.support.XmlWebApplicationContext] (main) 25 beans defined in org.springframework.web.context.support.XmlWebApplicationContext@548695: display name [Root WebApplicationContext]; startup date [Sat May 30 11:29:32 EEST 2009]; root of context hierarchy
+2009-05-30 11:29:32,906 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2009-05-30 11:29:32,906 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2009-05-30 11:29:32,906 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.binding.soap.customEditorConfigurer' to allow for resolving potential circular references
+2009-05-30 11:29:32,907 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.binding.soap.SoapVersionEditor#4766d2'
+2009-05-30 11:29:32,908 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.binding.soap.SoapVersionEditor#4766d2'
+2009-05-30 11:29:32,913 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2009-05-30 11:29:32,915 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2009-05-30 11:29:32,915 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2009-05-30 11:29:32,916 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor' to allow for resolving potential circular references
+2009-05-30 11:29:32,916 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2009-05-30 11:29:32,917 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2009-05-30 11:29:32,917 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2009-05-30 11:29:32,917 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor' to allow for resolving potential circular references
+2009-05-30 11:29:32,917 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2009-05-30 11:29:32,917 DEBUG [org.springframework.web.context.support.XmlWebApplicationContext] (main) Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@77d036]
+2009-05-30 11:29:32,917 DEBUG [org.springframework.web.context.support.XmlWebApplicationContext] (main) Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@68d91]
+2009-05-30 11:29:32,922 DEBUG [org.springframework.ui.context.support.UiApplicationContextUtils] (main) Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@bea80e]
+2009-05-30 11:29:32,924 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15b110e: defining beans [cxf,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.transport.servlet.ServletTransportFactory,bileteOnline]; root of factory hierarchy
+2009-05-30 11:29:32,925 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'cxf'
+2009-05-30 11:29:32,925 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'cxf'
+2009-05-30 11:29:32,959 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'cxf' to allow for resolving potential circular references
+2009-05-30 11:29:32,959 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'cxf:logging#152701c'
+2009-05-30 11:29:32,997 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning eagerly cached instance of singleton bean 'cxf' that is not fully initialized yet - a consequence of a circular reference
+2009-05-30 11:29:33,015 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'cxf:logging#152701c'
+2009-05-30 11:29:33,021 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'cxf'
+2009-05-30 11:29:33,021 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.Jsr250BeanPostProcessor'
+2009-05-30 11:29:33,021 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.bus.spring.BusExtensionPostProcessor'
+2009-05-30 11:29:33,021 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.resource.ResourceManager'
+2009-05-30 11:29:33,021 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.resource.ResourceManager'
+2009-05-30 11:29:33,029 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.resource.ResourceManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,029 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.resource.ClasspathResolver#18953fb'
+2009-05-30 11:29:33,029 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.resource.ClasspathResolver#18953fb'
+2009-05-30 11:29:33,029 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.resource.ClassLoaderResolver#e8ac88'
+2009-05-30 11:29:33,030 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.resource.ClassLoaderResolver#e8ac88'
+2009-05-30 11:29:33,030 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.bus.spring.BusApplicationContextResourceResolver#1973602'
+2009-05-30 11:29:33,031 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.bus.spring.BusApplicationContextResourceResolver#1973602'
+2009-05-30 11:29:33,036 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,042 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.resource.ResourceManager'
+2009-05-30 11:29:33,042 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.configuration.Configurer'
+2009-05-30 11:29:33,042 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.configuration.Configurer'
+2009-05-30 11:29:33,049 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.configuration.Configurer' to allow for resolving potential circular references
+2009-05-30 11:29:33,051 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Invoking afterPropertiesSet() on bean with name 'org.apache.cxf.configuration.Configurer'
+2009-05-30 11:29:33,051 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.configuration.Configurer'
+2009-05-30 11:29:33,051 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.binding.BindingFactoryManager'
+2009-05-30 11:29:33,051 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.binding.BindingFactoryManager'
+2009-05-30 11:29:33,059 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.binding.BindingFactoryManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,059 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.configuration.spring.SpringBeanMap#a47031'
+2009-05-30 11:29:33,067 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Invoking afterPropertiesSet() on bean with name 'org.apache.cxf.configuration.spring.SpringBeanMap#a47031'
+2009-05-30 11:29:33,067 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.configuration.spring.SpringBeanMap#a47031'
+2009-05-30 11:29:33,070 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,073 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.binding.BindingFactoryManager'
+2009-05-30 11:29:33,074 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.transport.DestinationFactoryManager'
+2009-05-30 11:29:33,074 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.transport.DestinationFactoryManager'
+2009-05-30 11:29:33,078 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.transport.DestinationFactoryManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,078 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.configuration.spring.SpringBeanMap#1c1c532'
+2009-05-30 11:29:33,078 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Invoking afterPropertiesSet() on bean with name 'org.apache.cxf.configuration.spring.SpringBeanMap#1c1c532'
+2009-05-30 11:29:33,079 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.configuration.spring.SpringBeanMap#1c1c532'
+2009-05-30 11:29:33,082 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,083 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.transport.DestinationFactoryManager'
+2009-05-30 11:29:33,083 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.transport.ConduitInitiatorManager'
+2009-05-30 11:29:33,083 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.transport.ConduitInitiatorManager'
+2009-05-30 11:29:33,084 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.transport.ConduitInitiatorManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,084 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.configuration.spring.SpringBeanMap#79819a'
+2009-05-30 11:29:33,084 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Invoking afterPropertiesSet() on bean with name 'org.apache.cxf.configuration.spring.SpringBeanMap#79819a'
+2009-05-30 11:29:33,085 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.configuration.spring.SpringBeanMap#79819a'
+2009-05-30 11:29:33,088 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,089 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.transport.ConduitInitiatorManager'
+2009-05-30 11:29:33,090 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.wsdl.WSDLManager'
+2009-05-30 11:29:33,090 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.wsdl.WSDLManager'
+2009-05-30 11:29:33,544 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.wsdl.WSDLManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,544 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,549 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.wsdl.WSDLManager'
+2009-05-30 11:29:33,549 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.phase.PhaseManager'
+2009-05-30 11:29:33,549 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.phase.PhaseManager'
+2009-05-30 11:29:33,551 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.phase.PhaseManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,551 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.phase.PhaseManager'
+2009-05-30 11:29:33,551 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.workqueue.WorkQueueManager'
+2009-05-30 11:29:33,551 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.workqueue.WorkQueueManager'
+2009-05-30 11:29:33,559 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.workqueue.WorkQueueManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,560 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,563 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.workqueue.WorkQueueManager'
+2009-05-30 11:29:33,563 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager'
+2009-05-30 11:29:33,563 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager'
+2009-05-30 11:29:33,564 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,564 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,589 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.buslifecycle.BusLifeCycleManager'
+2009-05-30 11:29:33,589 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.endpoint.ServerRegistry'
+2009-05-30 11:29:33,589 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.endpoint.ServerRegistry'
+2009-05-30 11:29:33,589 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.endpoint.ServerRegistry' to allow for resolving potential circular references
+2009-05-30 11:29:33,589 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,593 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.endpoint.ServerRegistry'
+2009-05-30 11:29:33,593 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.endpoint.ServerLifeCycleManager'
+2009-05-30 11:29:33,593 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.endpoint.ServerLifeCycleManager'
+2009-05-30 11:29:33,593 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.endpoint.ServerLifeCycleManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,594 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.endpoint.ServerLifeCycleManager'
+2009-05-30 11:29:33,595 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.endpoint.ClientLifeCycleManager'
+2009-05-30 11:29:33,595 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.endpoint.ClientLifeCycleManager'
+2009-05-30 11:29:33,595 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.endpoint.ClientLifeCycleManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,596 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.endpoint.ClientLifeCycleManager'
+2009-05-30 11:29:33,596 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.transports.http.QueryHandlerRegistry'
+2009-05-30 11:29:33,596 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.transports.http.QueryHandlerRegistry'
+2009-05-30 11:29:33,596 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.transports.http.QueryHandlerRegistry' to allow for resolving potential circular references
+2009-05-30 11:29:33,596 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,601 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.transport.http.WSDLQueryHandler#12bb82b'
+2009-05-30 11:29:33,611 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,618 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.transport.http.WSDLQueryHandler#12bb82b'
+2009-05-30 11:29:33,619 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.transports.http.QueryHandlerRegistry'
+2009-05-30 11:29:33,619 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.endpoint.EndpointResolverRegistry'
+2009-05-30 11:29:33,619 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.endpoint.EndpointResolverRegistry'
+2009-05-30 11:29:33,620 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.endpoint.EndpointResolverRegistry' to allow for resolving potential circular references
+2009-05-30 11:29:33,620 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,624 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.endpoint.EndpointResolverRegistry'
+2009-05-30 11:29:33,624 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.headers.HeaderManager'
+2009-05-30 11:29:33,625 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.headers.HeaderManager'
+2009-05-30 11:29:33,625 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.headers.HeaderManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,625 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,687 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.headers.HeaderManager'
+2009-05-30 11:29:33,687 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.catalog.OASISCatalogManager'
+2009-05-30 11:29:33,687 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.catalog.OASISCatalogManager'
+2009-05-30 11:29:33,759 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.catalog.OASISCatalogManager' to allow for resolving potential circular references
+2009-05-30 11:29:33,759 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,771 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.catalog.OASISCatalogManager'
+2009-05-30 11:29:33,771 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.endpoint.ServiceContractResolverRegistry'
+2009-05-30 11:29:33,771 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.endpoint.ServiceContractResolverRegistry'
+2009-05-30 11:29:33,772 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.endpoint.ServiceContractResolverRegistry' to allow for resolving potential circular references
+2009-05-30 11:29:33,772 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,775 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.endpoint.ServiceContractResolverRegistry'
+2009-05-30 11:29:33,776 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.customEditorConfigurer'
+2009-05-30 11:29:33,776 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.transport.servlet.ServletTransportFactory'
+2009-05-30 11:29:33,776 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.transport.servlet.ServletTransportFactory'
+2009-05-30 11:29:33,783 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.transport.servlet.ServletTransportFactory' to allow for resolving potential circular references
+2009-05-30 11:29:33,784 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,808 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.transport.servlet.ServletTransportFactory'
+2009-05-30 11:29:33,808 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'bileteOnline'
+2009-05-30 11:29:33,809 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'bileteOnline'
+2009-05-30 11:29:33,814 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:33,890 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'bileteOnline' to allow for resolving potential circular references
+2009-05-30 11:29:33,899 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Invoking init method  'publish' on bean with name 'bileteOnline'
+2009-05-30 11:29:34,287 ERROR [STDERR] (main) May 30, 2009 11:29:34 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFO: Creating Service {http://ws.bileteonline.disertatie.alin.com/}BileteOnlineImplService from class com.alin.disertatie.bileteonline.ws.BileteOnline
+2009-05-30 11:29:35,635 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,635 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,636 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.binding.soap.SoapTransportFactory' to allow for resolving potential circular references
+2009-05-30 11:29:35,641 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:35,642 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,642 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,642 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,642 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,642 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,642 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.SoapTransportFactory'
+2009-05-30 11:29:35,643 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating shared instance of singleton bean 'org.apache.cxf.binding.soap.SoapBindingFactory'
+2009-05-30 11:29:35,643 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Creating instance of bean 'org.apache.cxf.binding.soap.SoapBindingFactory'
+2009-05-30 11:29:35,650 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Eagerly caching bean 'org.apache.cxf.binding.soap.SoapBindingFactory' to allow for resolving potential circular references
+2009-05-30 11:29:35,655 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:35,661 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'org.apache.cxf.binding.soap.SoapBindingFactory'
+2009-05-30 11:29:35,661 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'org.apache.cxf.binding.soap.SoapBindingFactory'
+2009-05-30 11:29:35,830 ERROR [STDERR] (main) May 30, 2009 11:29:35 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /BileteOnline
+2009-05-30 11:29:35,850 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Finished creating instance of bean 'bileteOnline'
+2009-05-30 11:29:35,850 DEBUG [org.springframework.web.context.ContextLoader] (main) Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2009-05-30 11:29:35,850 INFO  [org.springframework.web.context.ContextLoader] (main) Root WebApplicationContext: initialization completed in 3650 ms
+2009-05-30 11:29:35,854 ERROR [STDERR] (main) May 30, 2009 11:29:35 AM org.apache.cxf.transport.servlet.CXFServlet loadSpringBus
+INFO: Load the bus with application context
+2009-05-30 11:29:35,863 INFO  [org.apache.cxf.bus.spring.BusApplicationContext] (main) Refreshing org.apache.cxf.bus.spring.BusApplicationContext@1b3db9c: display name [org.apache.cxf.bus.spring.BusApplicationContext@1b3db9c]; startup date [Sat May 30 11:29:35 EEST 2009]; parent: org.springframework.web.context.support.XmlWebApplicationContext@548695
+2009-05-30 11:29:35,916 ERROR [STDERR] (main) May 30, 2009 11:29:35 AM org.apache.cxf.bus.spring.BusApplicationContext getConfigResources
+INFO: No cxf.xml configuration file detected, relying on defaults.
+2009-05-30 11:29:35,916 INFO  [org.apache.cxf.bus.spring.BusApplicationContext] (main) Bean factory for application context [org.apache.cxf.bus.spring.BusApplicationContext@1b3db9c]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1617dfa
+2009-05-30 11:29:35,917 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1617dfa: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@15b110e
+2009-05-30 11:29:35,917 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (main) Returning cached instance of singleton bean 'cxf'
+2009-05-30 11:29:35,920 ERROR [STDERR] (main) May 30, 2009 11:29:35 AM org.apache.cxf.transport.servlet.AbstractCXFServlet replaceDestinationFactory
+INFO: Servlet transport factory already registered 
+2009-05-30 11:29:36,360 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (main) deploy, ctxPath=/jmx-console, vfsUrl=jmx-console.war
+2009-05-30 11:29:36,973 INFO  [org.apache.coyote.http11.Http11Protocol] (main) Starting Coyote HTTP/1.1 on http-127.0.0.1-2050
+2009-05-30 11:29:37,003 INFO  [org.apache.coyote.ajp.AjpProtocol] (main) Starting Coyote AJP/1.3 on ajp-127.0.0.1-2059
+2009-05-30 11:29:37,040 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (main) JBoss (Microcontainer) [5.0.0.GA (build: SVNTag=JBoss_5_0_0_GA date=200812041714)] Started in 1m:4s:317ms
+2009-05-30 11:31:02,671 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:31:02 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[594], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:createReservation>
+         
+         <reservation>           
+            <parking>1</parking>                  
+            <reservationFrom>2009-05-30T00:00:00</reservationFrom>            
+            <reservationTo>2009-05-31T23:00:00</reservationTo>            
+            <vehicleNumber>GL 02 AAB</vehicleNumber>
+         </reservation>
+      </ws:createReservation>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:31:04,130 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_CHARGING.FN_CALC_PRICE(?, ?)}]
+2009-05-30 11:31:04,231 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:31:08,287 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:31:08,288 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:31:08,294 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:31:08,296 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{call PKG_RESERVATION.make_reservation(?)}]
+2009-05-30 11:31:08,296 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:31:09,351 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:31:09,351 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:31:09,359 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:31:09,359 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_CHARGING.FN_CHARGE(?, ?)}]
+2009-05-30 11:31:09,359 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:31:11,018 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:31:11,019 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:31:11,019 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:31:11,120 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:31:11 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:createReservationResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"><return><chargedPrice>17.0</chargedPrice><parking>1</parking><reservationDate>2009-05-30T11:31:09+03:00</reservationDate><reservationFrom>2009-05-30T00:00:00+03:00</reservationFrom><reservationId>184</reservationId><reservationTo>2009-05-31T23:00:00+03:00</reservationTo><vehicleNumber>GL 02 AAB</vehicleNumber></return></ns2:createReservationResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:31:31,361 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:31:31>
+2009-05-30 11:31:31,361 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:31:31,361 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:31:31,366 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:31:36,505 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:31:36 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[364], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:cancelReservationByVehicleNumber>         
+         <vehicleNumber>GL 02 AAB</vehicleNumber>
+      </ws:cancelReservationByVehicleNumber>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:31:36,508 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.cancel_reservation(?)}]
+2009-05-30 11:31:36,508 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:31:37,266 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:31:37,266 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:31:37,267 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:31:37,267 INFO  [STDOUT] (http-127.0.0.1-2050-1) [SUCCESS]
+2009-05-30 11:31:37,269 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:31:37 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:cancelReservationByVehicleNumberResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:31:41,366 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:31:41>
+2009-05-30 11:31:41,366 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:31:41,366 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:31:41,366 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:33:41,360 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:33:41>
+2009-05-30 11:33:41,360 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:33:41,360 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:33:41,364 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:33:51,364 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:33:51>
+2009-05-30 11:33:51,364 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:33:51,364 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:33:51,364 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:35:51,358 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:35:51>
+2009-05-30 11:35:51,358 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:35:51,358 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:35:51,363 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:36:01,363 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:36:01>
+2009-05-30 11:36:01,363 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:36:01,363 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:36:01,363 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:38:01,357 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:38:01>
+2009-05-30 11:38:01,357 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:38:01,357 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:38:01,362 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:38:11,362 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:38:11>
+2009-05-30 11:38:11,362 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:38:11,362 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:38:11,362 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:40:11,356 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:40:11>
+2009-05-30 11:40:11,356 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:40:11,356 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:40:11,361 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:40:21,361 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:40:21>
+2009-05-30 11:40:21,361 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:40:21,361 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:40:21,361 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:41:11,178 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:41:11 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[594], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:createReservation>
+         
+         <reservation>           
+            <parking>1</parking>                  
+            <reservationFrom>2009-05-30T00:00:00</reservationFrom>            
+            <reservationTo>2009-05-31T23:00:00</reservationTo>            
+            <vehicleNumber>GL 22 AAB</vehicleNumber>
+         </reservation>
+      </ws:createReservation>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:41:11,180 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_CHARGING.FN_CALC_PRICE(?, ?)}]
+2009-05-30 11:41:11,180 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:41:12,919 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:41:12,919 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:41:12,920 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:41:12,920 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{call PKG_RESERVATION.make_reservation(?)}]
+2009-05-30 11:41:12,920 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:41:14,163 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:41:14,163 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:41:14,163 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:41:14,163 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_CHARGING.FN_CHARGE(?, ?)}]
+2009-05-30 11:41:14,163 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:41:14,206 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:41:14,206 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:41:14,206 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:41:14,207 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:41:14 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:createReservationResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"><return><chargedPrice>17.0</chargedPrice><parking>1</parking><reservationDate>2009-05-30T11:41:13+03:00</reservationDate><reservationFrom>2009-05-30T00:00:00+03:00</reservationFrom><reservationId>185</reservationId><reservationTo>2009-05-31T23:00:00+03:00</reservationTo><vehicleNumber>GL 22 AAB</vehicleNumber></return></ns2:createReservationResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:41:21,458 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:41:21 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[364], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:cancelReservationByVehicleNumber>         
+         <vehicleNumber>GL 22 AAB</vehicleNumber>
+      </ws:cancelReservationByVehicleNumber>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:41:21,459 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.cancel_reservation(?)}]
+2009-05-30 11:41:21,459 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:41:23,272 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:41:23,272 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:41:23,272 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:41:23,272 INFO  [STDOUT] (http-127.0.0.1-2050-1) [SUCCESS]
+2009-05-30 11:41:23,274 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:41:23 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:cancelReservationByVehicleNumberResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:42:21,355 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:42:21>
+2009-05-30 11:42:21,355 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:42:21,355 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:42:21,360 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:42:31,360 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:42:31>
+2009-05-30 11:42:31,360 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:42:31,360 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:42:31,360 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:43:11,915 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:43:11 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[356], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:checkReservationByVehicleNumber>
+         
+         <vehicleNumber>GL 22 AAB</vehicleNumber>
+      </ws:checkReservationByVehicleNumber>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:43:11,918 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.check_reservation(?)}]
+2009-05-30 11:43:11,918 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:43:13,550 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:43:13,550 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:43:13,550 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:43:13,550 INFO  [STDOUT] (http-127.0.0.1-2050-1) [VALID]
+2009-05-30 11:43:13,552 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:43:13 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:checkReservationByVehicleNumberResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:43:36,840 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:43:36 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[356], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:checkReservationByVehicleNumber>
+         
+         <vehicleNumber>GL 22 AAB</vehicleNumber>
+      </ws:checkReservationByVehicleNumber>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:43:36,843 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.check_reservation(?)}]
+2009-05-30 11:43:36,843 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:43:36,847 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:43:36,847 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:43:36,847 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:43:36,848 INFO  [STDOUT] (http-127.0.0.1-2050-1) [VALID]
+2009-05-30 11:43:36,849 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:43:36 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:checkReservationByVehicleNumberResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:43:38,175 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:43:38 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[356], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:checkReservationByVehicleNumber>
+         
+         <vehicleNumber>GL 22 AAB</vehicleNumber>
+      </ws:checkReservationByVehicleNumber>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:43:38,177 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.check_reservation(?)}]
+2009-05-30 11:43:38,177 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:43:38,179 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:43:38,179 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:43:38,179 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:43:38,179 INFO  [STDOUT] (http-127.0.0.1-2050-1) [VALID]
+2009-05-30 11:43:38,180 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:43:38 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:checkReservationByVehicleNumberResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:44:17,389 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:44:17 AM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[356], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:checkReservationByVehicleNumber>
+         
+         <vehicleNumber>GL 22 AAB</vehicleNumber>
+      </ws:checkReservationByVehicleNumber>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 11:44:17,391 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.check_reservation(?)}]
+2009-05-30 11:44:17,391 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 11:44:17,423 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 11:44:17,423 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 11:44:17,423 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 11:44:17,423 INFO  [STDOUT] (http-127.0.0.1-2050-1) [INVALID,Authorisation canceled]
+2009-05-30 11:44:17,423 INFO  [STDOUT] (http-127.0.0.1-2050-1) Reason is : Authorisation canceled
+2009-05-30 11:44:17,425 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:44:17 AM org.apache.cxf.phase.PhaseInterceptorChain doIntercept
+INFO: Application has thrown exception, unwinding now: com.alin.disertatie.bileteonline.method.exception.NoReservationFoundException: Authorisation canceled
+2009-05-30 11:44:17,609 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 11:44:17 AM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode>soap:Server</faultcode><faultstring>Authorisation canceled</faultstring><detail><ns1:NoReservationFoundException xmlns:ns1="http://ws.bileteonline.disertatie.alin.com/" /></detail></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 11:44:31,355 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:44:31>
+2009-05-30 11:44:31,355 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:44:31,355 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:44:31,360 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:44:41,360 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:44:41>
+2009-05-30 11:44:41,360 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:44:41,360 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:44:41,360 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:46:41,354 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:46:41>
+2009-05-30 11:46:41,354 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:46:41,354 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:46:41,359 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:46:51,359 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:46:51>
+2009-05-30 11:46:51,359 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:46:51,359 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:46:51,359 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:48:51,353 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:48:51>
+2009-05-30 11:48:51,353 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:48:51,353 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:48:51,357 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:49:01,357 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:49:01>
+2009-05-30 11:49:01,357 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:49:01,357 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:49:01,357 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:51:01,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:51:01>
+2009-05-30 11:51:01,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:51:01,351 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:51:01,355 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:51:11,355 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:51:11>
+2009-05-30 11:51:11,355 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:51:11,355 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:51:11,355 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:53:11,349 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:53:11>
+2009-05-30 11:53:11,349 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:53:11,349 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:53:11,353 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:53:21,353 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:53:21>
+2009-05-30 11:53:21,353 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:53:21,353 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:53:21,353 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:55:21,347 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:55:21>
+2009-05-30 11:55:21,347 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:55:21,347 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:55:21,351 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:55:31,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:55:31>
+2009-05-30 11:55:31,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:55:31,351 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:55:31,351 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:57:31,345 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:57:31>
+2009-05-30 11:57:31,345 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:57:31,345 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:57:31,350 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:57:41,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:57:41>
+2009-05-30 11:57:41,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:57:41,351 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:57:41,351 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 11:59:41,345 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 11:59:41>
+2009-05-30 11:59:41,345 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 11:59:41,345 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 11:59:41,351 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 11:59:51,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 11:59:51>
+2009-05-30 11:59:51,351 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 11:59:51,351 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 11:59:51,351 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:01:51,345 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 12:01:51>
+2009-05-30 12:01:51,345 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 12:01:51,345 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 12:01:51,349 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 12:02:01,349 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 12:02:01>
+2009-05-30 12:02:01,349 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 12:02:01,349 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 12:02:01,349 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:04:01,343 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 12:04:01>
+2009-05-30 12:04:01,343 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 12:04:01,343 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 12:04:01,348 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 12:04:11,348 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 12:04:11>
+2009-05-30 12:04:11,348 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 12:04:11,348 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 12:04:11,348 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:06:11,414 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 12:06:11>
+2009-05-30 12:06:11,414 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 12:06:11,415 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 12:06:11,419 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 12:06:21,419 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 12:06:21>
+2009-05-30 12:06:21,419 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 12:06:21,419 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 12:06:21,419 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:08:21,770 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 12:08:21>
+2009-05-30 12:08:22,867 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 12:08:23,973 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 12:08:25,998 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 12:08:35,998 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 12:08:35>
+2009-05-30 12:08:35,998 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 12:08:35,998 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 12:08:35,998 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:10:35,992 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 12:10:35>
+2009-05-30 12:10:35,992 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 12:10:35,992 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 12:10:35,996 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 12:10:45,996 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 12:10:45>
+2009-05-30 12:10:45,996 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 12:10:45,996 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 12:10:45,996 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:12:45,990 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 12:12:45>
+2009-05-30 12:12:45,990 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 12:12:45,990 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 12:12:45,995 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 12:12:49,599 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 12:12:49 PM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[594], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:createReservation>
+         
+         <reservation>           
+            <parking>1</parking>                  
+            <reservationFrom>2009-05-30T00:00:00</reservationFrom>            
+            <reservationTo>2009-05-31T23:00:00</reservationTo>            
+            <vehicleNumber>GL 23 AAB</vehicleNumber>
+         </reservation>
+      </ws:createReservation>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 12:12:50,463 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_CHARGING.FN_CALC_PRICE(?, ?)}]
+2009-05-30 12:12:50,480 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 12:12:52,413 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 12:12:52,413 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 12:12:52,427 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 12:12:52,427 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{call PKG_RESERVATION.make_reservation(?)}]
+2009-05-30 12:12:52,427 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 12:12:54,126 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 12:12:54,126 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 12:12:54,136 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 12:12:54,136 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_CHARGING.FN_CHARGE(?, ?)}]
+2009-05-30 12:12:54,136 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 12:12:54,306 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 12:12:54,306 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 12:12:54,306 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 12:12:54,442 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 12:12:54 PM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:createReservationResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"><return><chargedPrice>17.0</chargedPrice><parking>1</parking><reservationDate>2009-05-30T12:12:53+03:00</reservationDate><reservationFrom>2009-05-30T00:00:00+03:00</reservationFrom><reservationId>186</reservationId><reservationTo>2009-05-31T23:00:00+03:00</reservationTo><vehicleNumber>GL 23 AAB</vehicleNumber></return></ns2:createReservationResponse></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 12:12:55,995 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 12:12:55>
+2009-05-30 12:12:55,995 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 12:12:55,995 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 12:12:55,995 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:13:11,791 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 12:13:11 PM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[357], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:cancelReservationByReservationId>        
+         <reservationId>186</reservationId>
+      </ws:cancelReservationByReservationId>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 12:13:12,434 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.cancel_reservation(?)}]
+2009-05-30 12:13:12,435 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 12:13:16,872 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 12:13:16,872 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 12:13:16,872 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 12:13:16,879 INFO  [STDOUT] (http-127.0.0.1-2050-1) [SUCCESS]
+2009-05-30 12:13:16,909 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 12:13:16 PM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {SOAPAction=[""]}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:cancelReservationByReservationIdResponse xmlns:ns2="http://ws.bileteonline.disertatie.alin.com/"/></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 12:14:11,105 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 12:14:11 PM org.apache.cxf.interceptor.LoggingInInterceptor logging
+INFO: Inbound Message
+----------------------------
+Encoding: UTF-8
+Headers: {content-length=[357], host=[127.0.0.1:2050], user-agent=[Jakarta Commons-HttpClient/3.0.1], content-type=[text/xml;charset=UTF-8], soapaction=[""]}
+Messages: 
+Message:
+
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:cancelReservationByReservationId>        
+         <reservationId>486</reservationId>
+      </ws:cancelReservationByReservationId>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+2009-05-30 12:14:11,121 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) Calling stored procedure [{? = call PKG_RESERVATION.cancel_reservation(?)}]
+2009-05-30 12:14:11,121 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Fetching JDBC Connection from DataSource
+2009-05-30 12:14:11,144 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.execute() returned 'false'
+2009-05-30 12:14:11,144 DEBUG [org.springframework.jdbc.core.JdbcTemplate] (http-127.0.0.1-2050-1) CallableStatement.getUpdateCount() returned -1
+2009-05-30 12:14:11,144 DEBUG [org.springframework.jdbc.datasource.DataSourceUtils] (http-127.0.0.1-2050-1) Returning JDBC Connection to DataSource
+2009-05-30 12:14:11,144 INFO  [STDOUT] (http-127.0.0.1-2050-1) [INVALID,No authorisations found]
+2009-05-30 12:14:11,144 INFO  [STDOUT] (http-127.0.0.1-2050-1) Reason is : No authorisations found
+2009-05-30 12:14:11,175 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 12:14:11 PM org.apache.cxf.phase.PhaseInterceptorChain doIntercept
+INFO: Application has thrown exception, unwinding now: com.alin.disertatie.bileteonline.method.exception.NoReservationFoundException: No authorisations found
+2009-05-30 12:14:11,323 ERROR [STDERR] (http-127.0.0.1-2050-1) May 30, 2009 12:14:11 PM org.apache.cxf.interceptor.LoggingOutInterceptor$LoggingCallback onClose
+INFO: Outbound Message
+---------------------------
+Encoding: UTF-8
+Headers: {}
+Messages: 
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode>soap:Server</faultcode><faultstring>No authorisations found</faultstring><detail><ns1:NoReservationFoundException xmlns:ns1="http://ws.bileteonline.disertatie.alin.com/" /></detail></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+2009-05-30 12:14:55,989 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - first pass <Sat, 30 May 2009 12:14:55>
+2009-05-30 12:14:55,989 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) StatusModule: first pass 
+2009-05-30 12:14:55,990 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_3] - TORecoveryModule - first pass
+2009-05-30 12:14:56,000 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.firstpass] Local XARecoveryModule - first pass
+2009-05-30 12:15:06,000 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) Periodic recovery - second pass <Sat, 30 May 2009 12:15:06>
+2009-05-30 12:15:06,000 DEBUG [com.arjuna.ats.arjuna.logging.arjLogger] (Thread-13) AtomicActionRecoveryModule: Second pass 
+2009-05-30 12:15:06,000 DEBUG [com.arjuna.ats.txoj.logging.txojLoggerI18N] (Thread-13) [com.arjuna.ats.internal.txoj.recovery.TORecoveryModule_6] - TORecoveryModule - second pass
+2009-05-30 12:15:06,000 DEBUG [com.arjuna.ats.jta.logging.loggerI18N] (Thread-13) [com.arjuna.ats.internal.jta.recovery.info.secondpass] Local XARecoveryModule - second pass
+2009-05-30 12:16:23,861 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (JBoss Shutdown Hook) Runtime shutdown hook called, forceHalt: true
+2009-05-30 12:16:23,997 INFO  [org.apache.coyote.http11.Http11Protocol] (JBoss Shutdown Hook) Pausing Coyote HTTP/1.1 on http-127.0.0.1-2050
+2009-05-30 12:16:24,240 INFO  [org.apache.coyote.http11.Http11Protocol] (JBoss Shutdown Hook) Stopping Coyote HTTP/1.1 on http-127.0.0.1-2050
+2009-05-30 12:16:24,245 INFO  [org.apache.coyote.ajp.AjpProtocol] (JBoss Shutdown Hook) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-2059
+2009-05-30 12:16:24,247 INFO  [org.apache.coyote.ajp.AjpProtocol] (JBoss Shutdown Hook) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-2059
+2009-05-30 12:16:24,700 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (JBoss Shutdown Hook) org.jboss.jms.server.connectionfactory.ConnectionFactory@39bb36 undeployed
+2009-05-30 12:16:24,705 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (JBoss Shutdown Hook) org.jboss.jms.server.connectionfactory.ConnectionFactory@74bc70 undeployed
+2009-05-30 12:16:24,707 INFO  [org.jboss.jms.server.connectionfactory.ConnectionFactory] (JBoss Shutdown Hook) org.jboss.jms.server.connectionfactory.ConnectionFactory@e4e7df undeployed
+2009-05-30 12:16:24,716 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/web-console, vfsUrl=management/console-mgr.sar/web-console.war
+2009-05-30 12:16:26,216 INFO  [org.jboss.jms.server.destination.QueueService] (JBoss Shutdown Hook) Queue[/queue/ExpiryQueue] stopped
+2009-05-30 12:16:26,218 INFO  [org.jboss.jms.server.destination.QueueService] (JBoss Shutdown Hook) Queue[/queue/DLQ] stopped
+2009-05-30 12:16:26,283 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler JBossEJB3QuartzScheduler_$_NON_CLUSTERED shutting down.
+2009-05-30 12:16:26,286 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler JBossEJB3QuartzScheduler_$_NON_CLUSTERED paused.
+2009-05-30 12:16:26,288 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler JBossEJB3QuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2009-05-30 12:16:26,296 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (JBoss Shutdown Hook) Unbound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' from JNDI name 'java:JmsXA'
+2009-05-30 12:16:27,785 INFO  [org.jboss.jms.server.ServerPeer] (JBoss Shutdown Hook) JMS ServerPeer[0] stopped
+2009-05-30 12:16:27,795 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/invoker, vfsUrl=http-invoker.sar/invoker.war
+2009-05-30 12:16:28,636 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/jbossws, vfsUrl=jbossws.sar/jbossws-management.war
+2009-05-30 12:16:28,642 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/, vfsUrl=ROOT.war
+2009-05-30 12:16:28,649 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/bileteparcare-backend, vfsUrl=bileteparcare-backend.war
+2009-05-30 12:16:28,716 INFO  [org.apache.cxf.bus.spring.BusApplicationContext] (JBoss Shutdown Hook) Closing org.apache.cxf.bus.spring.BusApplicationContext@1b3db9c: display name [org.apache.cxf.bus.spring.BusApplicationContext@1b3db9c]; startup date [Sat May 30 11:29:35 EEST 2009]; parent: org.springframework.web.context.support.XmlWebApplicationContext@548695
+2009-05-30 12:16:28,720 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1617dfa: defining beans []; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@15b110e
+2009-05-30 12:16:28,723 INFO  [org.apache.catalina.core.ContainerBase.[jboss.web].[localhost].[/bileteparcare-backend]] (JBoss Shutdown Hook) Closing Spring root WebApplicationContext
+2009-05-30 12:16:28,724 INFO  [org.springframework.web.context.support.XmlWebApplicationContext] (JBoss Shutdown Hook) Closing org.springframework.web.context.support.XmlWebApplicationContext@548695: display name [Root WebApplicationContext]; startup date [Sat May 30 11:29:32 EEST 2009]; root of context hierarchy
+2009-05-30 12:16:28,747 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15b110e: defining beans [cxf,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,org.apache.cxf.resource.ResourceManager,org.apache.cxf.configuration.Configurer,org.apache.cxf.binding.BindingFactoryManager,org.apache.cxf.transport.DestinationFactoryManager,org.apache.cxf.transport.ConduitInitiatorManager,org.apache.cxf.wsdl.WSDLManager,org.apache.cxf.phase.PhaseManager,org.apache.cxf.workqueue.WorkQueueManager,org.apache.cxf.buslifecycle.BusLifeCycleManager,org.apache.cxf.endpoint.ServerRegistry,org.apache.cxf.endpoint.ServerLifeCycleManager,org.apache.cxf.endpoint.ClientLifeCycleManager,org.apache.cxf.transports.http.QueryHandlerRegistry,org.apache.cxf.endpoint.EndpointResolverRegistry,org.apache.cxf.headers.HeaderManager,org.apache.cxf.catalog.OASISCatalogManager,org.apache.cxf.endpoint.ServiceContractResolverRegistry,org.apache.cxf.binding.soap.SoapBindingFactory,org.apache.cxf.binding.soap.SoapTransportFactory,org.apache.cxf.binding.soap.customEditorConfigurer,org.apache.cxf.transport.servlet.ServletTransportFactory,bileteOnline]; root of factory hierarchy
+2009-05-30 12:16:28,803 DEBUG [org.springframework.beans.factory.support.DisposableBeanAdapter] (JBoss Shutdown Hook) Invoking destroy method 'stop' on bean with name 'bileteOnline'
+2009-05-30 12:16:28,880 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Retrieved dependent beans for bean 'org.apache.cxf.transport.http.WSDLQueryHandler#12bb82b': [org.apache.cxf.transports.http.QueryHandlerRegistry]
+2009-05-30 12:16:29,088 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Retrieved dependent beans for bean 'org.apache.cxf.configuration.spring.SpringBeanMap#79819a': [org.apache.cxf.transport.ConduitInitiatorManager]
+2009-05-30 12:16:29,144 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Retrieved dependent beans for bean 'org.apache.cxf.configuration.spring.SpringBeanMap#1c1c532': [org.apache.cxf.transport.DestinationFactoryManager]
+2009-05-30 12:16:29,144 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Retrieved dependent beans for bean 'org.apache.cxf.configuration.spring.SpringBeanMap#a47031': [org.apache.cxf.binding.BindingFactoryManager]
+2009-05-30 12:16:29,145 DEBUG [org.springframework.beans.factory.support.DisposableBeanAdapter] (JBoss Shutdown Hook) Invoking destroy() on bean with name 'org.apache.cxf.configuration.Configurer'
+2009-05-30 12:16:29,145 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Retrieved dependent beans for bean 'org.apache.cxf.resource.ClasspathResolver#18953fb': [org.apache.cxf.resource.ResourceManager]
+2009-05-30 12:16:29,168 DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] (JBoss Shutdown Hook) Retrieved dependent beans for bean 'cxf:logging#152701c': [cxf]
+2009-05-30 12:16:29,193 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (JBoss Shutdown Hook) undeploy, ctxPath=/jmx-console, vfsUrl=jmx-console.war
+2009-05-30 12:16:29,214 INFO  [org.apache.catalina.core.StandardService] (JBoss Shutdown Hook) Stopping service jboss.web
+2009-05-30 12:16:29,476 INFO  [org.jboss.mail.MailService] (JBoss Shutdown Hook) Mail service 'java:/Mail' removed from JNDI
+2009-05-30 12:16:29,528 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (JBoss Shutdown Hook) Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' from JNDI name 'java:DefaultDS'
+2009-05-30 12:16:30,664 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+2009-05-30 12:16:30,667 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+2009-05-30 12:16:30,670 INFO  [org.quartz.simpl.SimpleThreadPool] (JBoss Shutdown Hook) There are still 26 worker threads active. See javadoc runInThread(Runnable) for a possible explanation
+2009-05-30 12:16:30,671 INFO  [org.quartz.core.QuartzScheduler] (JBoss Shutdown Hook) Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+2009-05-30 12:16:31,070 INFO  [com.arjuna.ats.jbossatx.jta.TransactionManagerService] (JBoss Shutdown Hook) Stopping transaction recovery manager
+2009-05-30 12:16:31,652 INFO  [org.jboss.jdbc.HypersonicDatabase] (JBoss Shutdown Hook) Database standalone closed clean
+2009-05-30 12:16:36,634 INFO  [org.jboss.bootstrap.microcontainer.ServerImpl] (JBoss Shutdown Hook) Shutdown complete

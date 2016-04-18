@@ -1,0 +1,6 @@
+[Fri May 29 18:28:57 2009][3556:7060] [info] mod_jk.c (3018): mod_jk/1.2.27 initialized
+[Fri May 29 18:28:57 2009][3556:7060] [info] mod_jk.c (3018): mod_jk/1.2.27 initialized
+[Fri May 29 18:28:58 2009][4612:3372] [info] mod_jk.c (3018): mod_jk/1.2.27 initialized
+[Fri May 29 18:28:58 2009][4612:3372] [info] mod_jk.c (3018): mod_jk/1.2.27 initialized
+[Fri May 29 18:29:33 2009]loadbalancer 127.0.0.1 0.093600
+[Fri May 29 18:29:37 2009]loadbalancer 127.0.0.1 2.558416

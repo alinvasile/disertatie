@@ -1,0 +1,1 @@
+mvn archetype:create -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DgroupId=BileteParcare.FrontEnd -DartifactId=bileteparcare-frontend -DpackageName=com.alin.disertatie.bileteonline -Dversion=1.0

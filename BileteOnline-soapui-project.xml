@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.bileteonline.disertatie.alin.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:createReservation>
+         <!--Optional:-->
+         <reservation>
+            <chargedPrice>?</chargedPrice>
+            <parking>?</parking>
+            <!--Optional:-->
+            <reservationDate>?</reservationDate>
+            <!--Optional:-->
+            <reservationFrom>?</reservationFrom>
+            <reservationId>?</reservationId>
+            <!--Optional:-->
+            <reservationTo>?</reservationTo>
+            <!--Optional:-->
+            <vehicleNumber>?</vehicleNumber>
+         </reservation>
+      </ws:createReservation>
+   </soapenv:Body>
+</soapenv:Envelope>

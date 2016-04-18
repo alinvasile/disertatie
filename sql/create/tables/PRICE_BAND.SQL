@@ -1,0 +1,19 @@
+-- region creating tables
+CREATE TABLE 
+    "PRICE_BAND" (
+        "PRICE_BAND" NUMBER NOT NULL, 
+        "PRICE" NUMBER(10, 2) NOT NULL, 
+        "CURRENCY" CHAR(3) NOT NULL, 
+        "MEASURE_UNIT_ID" NUMBER NOT NULL, 
+        "MEASURE_AMOUNT" NUMBER NOT NULL) ;
+-- endregion creating tables
+
+-- region adding primary keys
+ALTER TABLE "PRICE_BAND" 
+    ADD CONSTRAINT "PK_PRICE_BAND" 
+            PRIMARY KEY ("PRICE_BAND") ;
+-- endregion adding primary keys
+
+ ALTER TABLE "PRICE_BAND" ADD CONSTRAINT "FK_MEASURE_UFK_MEASURE_UNIT" FOREIGN KEY(MEASURE_UNIT_ID) REFERENCES "MEASURE_UNIT"("MEASURE_UNIT_ID");
+
+quit;

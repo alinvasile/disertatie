@@ -1,0 +1,25 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>BileteParcare</artifactId>
+    <groupId>project</groupId>
+    <version>1.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>BileteParcare.FrontEnd</groupId>
+  <artifactId>bileteparcare-frontend</artifactId>
+  <packaging>war</packaging>
+  <name>bileteparcare-frontend Maven Webapp</name>
+  <version>1.0</version>
+  <url>http://maven.apache.org</url>
+  <build>
+    <finalName>bileteparcare-frontend</finalName>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

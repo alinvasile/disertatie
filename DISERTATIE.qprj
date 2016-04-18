@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  DatabaseSpy Project File  -->
+<Project Version="2" Expanded="Yes" Type="Root" Title="DISERTATIE">
+	<Folder FolderName="Data Sources" Expanded="Yes" Type="DataSourceFolder">
+		<datasource database_kind="Oracle" import_kind="ODBC" version="00.00.0000 Oracle Database 10g Express Edition Release 10.2.0.1.0 - Product" name="licenta" Type="DataSourceItem">
+			<properties>
+				<property name="Database Kind" value="Oracle"/>
+				<property name="Import Kind" value="ODBC"/>
+				<property name="Root Object" value="LICENTA"/>
+				<property name="FileDsn"/>
+				<property name="Dsn" value="licenta"/>
+				<property name="Driver"/>
+				<property name="Trusted_Connection" value="false"/>
+				<property name="App"/>
+				<property name="Server" value="xe"/>
+				<property name="Database"/>
+				<property name="Regional"/>
+				<property name="Languages"/>
+				<property name="Wsid"/>
+				<property name="Uid" value="licenta"/>
+				<property name="Pwd" value="5tXubE-Cqah21"/>
+				<property name="Port"/>
+				<property name="Option"/>
+				<property name="Stmt"/>
+				<property name="Driver Name" value="Microsoft ODBC for Oracle"/>
+				<property name="Driver Version" value="6.0.6001.18000"/>
+				<property name="Driver Company" value="Microsoft Corporation"/>
+				<property name="Driver File Name" value="msorcl32.dll"/>
+				<property name="Driver Full Path" value="C:\Windows\system32\msorcl32.dll"/>
+				<property name="Driver Date" value="24.04.2008"/>
+				<property name="DBQ"/>
+				<property name="DBA"/>
+				<property name="APA"/>
+				<property name="RST"/>
+				<property name="QTO"/>
+				<property name="CSR"/>
+				<property name="BAM"/>
+				<property name="PFC"/>
+				<property name="FEN"/>
+				<property name="FRC"/>
+				<property name="FDL"/>
+				<property name="FBS"/>
+				<property name="LOB"/>
+				<property name="FRL"/>
+				<property name="MTS"/>
+				<property name="FWC"/>
+				<property name="EXC"/>
+				<property name="XSM"/>
+				<property name="GDE"/>
+				<property name="MDI"/>
+				<property name="TLO"/>
+				<property name="TLL"/>
+				<property name="NUM"/>
+				<property name="DPM"/>
+			</properties>
+			<LocalViewStorage/>
+			<LocalRelationsStorage/>
+		</datasource>
+	</Folder>
+	<Folder FolderName="SQL" Type="SQLRootFolder" database_kind="Unknown" datasource="Offline" description="Store and organize SQL files for this project." blockingstrategy="semi"/>
+	<Folder FolderName="Design" Expanded="Yes" Type="DesignRootFolder" database_kind="Unknown" datasource="Offline" description="Store and organize Design files for this project.">
+		<File Type="DesignFile" FilePath="DBDesign.qdes" datasource_override="Yes" root_override="Yes" database_kind="Unknown" datasource="licenta" rootobject="LICENTA" description="Store and organize Design files for this project."/>
+	</Folder>
+	<Folder FolderName="Data Diff" Type="DataDiffRootFolder"/>
+	<Folder FolderName="Favorites" Type="FavoriteFolder"/>
+</Project>

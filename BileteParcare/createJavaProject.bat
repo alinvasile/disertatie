@@ -1,0 +1,1 @@
+mvn archetype:create -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DgroupId=BileteParcare.Common -DartifactId=bileteparcare-common -DpackageName=com.alin.disertatie -Dversion=1.0

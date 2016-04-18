@@ -1,0 +1,14 @@
+[Fri May 29 18:28:57 2009] [notice] Apache/2.2.11 (Win32) mod_jk/1.2.27 configured -- resuming normal operations
+[Fri May 29 18:28:57 2009] [notice] Server built: Dec 10 2008 00:10:06
+[Fri May 29 18:28:57 2009] [notice] Parent: Created child process 4612
+Apache server shutdown initiated...
+Child 4612: Child process is running
+[Fri May 29 18:28:58 2009] [notice] Child 4612: Acquired the start mutex.
+[Fri May 29 18:28:58 2009] [notice] Child 4612: Starting 64 worker threads.
+[Fri May 29 18:28:58 2009] [notice] Child 4612: Starting thread to listen on port 3030.
+[Fri May 29 18:29:50 2009] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Fri May 29 18:29:50 2009] [notice] Child 4612: Exit event signaled. Child process is ending.
+[Fri May 29 18:29:51 2009] [notice] Child 4612: Released the start mutex
+[Fri May 29 18:29:52 2009] [notice] Child 4612: All worker threads have exited.
+[Fri May 29 18:29:52 2009] [notice] Child 4612: Child process is exiting
+[Fri May 29 18:29:52 2009] [notice] Parent: Child process exited successfully.

@@ -1,0 +1,21 @@
+-- region creating tables
+CREATE TABLE "CAMPAIGN" (
+        "CAMPAIGN_ID" NUMBER NOT NULL, 
+        "CAMPAIGN_NAME" VARCHAR(255) NOT NULL, 
+        "CAMPAIGN_FROM" TIMESTAMP NOT NULL, 
+        "CAMPAIGN_TO" TIMESTAMP NOT NULL, 
+        "DETAILS" VARCHAR2(1000) NOT NULL) ;
+-- endregion creating tables
+
+-- region adding primary keys
+ALTER TABLE "CAMPAIGN" 
+    ADD CONSTRAINT "PK_CAMPAIGN_ID" 
+            PRIMARY KEY ("CAMPAIGN_ID") ;
+-- endregion adding primary keys
+
+-- region adding indices
+CREATE INDEX IX_FROM_CAMPAIGN ON "CAMPAIGN"("CAMPAIGN_FROM" DESC) NOSORT NOCOMPRESS NOLOGGING;
+CREATE INDEX IX_TO_CAMPAIGN ON "CAMPAIGN"("CAMPAIGN_TO" DESC) NOSORT NOCOMPRESS NOLOGGING;
+-- endregion adding indices
+
+quit;

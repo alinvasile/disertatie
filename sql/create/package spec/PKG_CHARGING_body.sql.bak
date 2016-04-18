@@ -1,0 +1,113 @@
+create or replace
+PACKAGE BODY pkg_charging AS
+
+  /*
+  * FUTURE : Change number returned into a type, having currency
+  */ FUNCTION fn_calc_default_price(from_date DATE,   to_date DATE) RETURN NUMBER AS
+  numberofdays NUMBER;
+  numberofhours NUMBER;
+
+  dailyprice price_band.price%TYPE := 0;
+  dailycurrency price_band.currency%TYPE := 0;
+
+  hourlyprice price_band.price%TYPE := 0;
+  hourlycurrency price_band.currency%TYPE := 0;
+  BEGIN
+    numberofdays := to_date -from_date;
+    numberofhours := pkg_reservation.datediff('HH',   from_date,   to_date);
+
+    -- for days, compute using price band 1010
+
+    IF numberofdays >= 1 THEN
+      SELECT price,
+        currency
+      INTO dailyprice,
+        dailycurrency
+      FROM price_band
+      WHERE price_band = '1010';
+    END IF;
+
+    -- for hours, compute using price band 1010
+    SELECT price,
+      currency
+    INTO hourlyprice,
+      hourlycurrency
+    FROM price_band
+    WHERE price_band = '1000';
+
+    IF numberofdays >= 1 THEN
+      numberofdays := FLOOR(numberofdays);
+    ELSE
+      numberofdays := 0;
+    END IF;
+
+    numberofhours := numberofhours -(numberofdays *24);
+    numberofhours := FLOOR(numberofhours);
+
+    RETURN numberofdays *dailyprice + numberofhours *hourlyprice;
+
+  END fn_calc_default_price;
+
+  FUNCTION fn_calc_price(from_date DATE,   to_date DATE) RETURN NUMBER AS
+  type arr_campaigns IS varray(50) OF NUMBER;
+  campaigns arr_campaigns;
+
+  currentCampaignId campaign.campaign_id%TYPE;
+  
+  cummulatedDiscount NUMBER := 0;
+  lowestPrice NUMBER := -1;
+  price NUMBER;
+  
+  currentTarriffId NUMBER;
+  currentDiscountId NUMBER;
+  
+  i NUMBER;
+  
+  discountType DISCOUNT.DISCOUNT_TYPE%type;
+  discountPercentage DISCOUNT.DISCOUNT_PERCENTAGE%type;
+  startHour DISCOUNT.START_HOUR%type;
+  endHour DISCOUNT.END_HOUR%type; 
+  discountCummulated DISCOUNT.DISCOUNT_CUMMULATED%type;
+  
+  associatedPriceBand NUMBER;
+
+  BEGIN
+    SELECT campaign_id bulk collect
+    INTO campaigns
+    FROM campaign
+    WHERE(from_date BETWEEN campaign_from
+     AND campaign_to) OR(to_date BETWEEN campaign_from
+     AND campaign_to);
+
+    FOR i IN campaigns.FIRST .. campaigns.LAST
+    LOOP
+      currentCampaignId := campaigns(i);
+      
+      SELECT TARRIF_ID,DISCOUNT_ID INTO currentTarriffId,currentDiscountId
+      FROM CAMPAIGN_DETAILS WHERE CAMPAIGN_ID = currentCampaignId;
+
+      SELECT DISCOUNT_TYPE,DISCOUNT_PERCENTAGE,START_HOUR,END_HOUR,DISCOUNT_CUMMULATED
+      INTO discountType, discountPercentage, startHour, endHour,discountCummulated
+      FROM DISCOUNT WHERE DISCOUNT_ID = currentDiscountId;
+      
+      -- determine if discount is applicable
+      if UPPER(discountCummulated) = 'Y' THEN
+        cummulatedDiscount := cummulatedDiscount + discountPercentage;
+      ELSE
+        -- get asscoiated tarrif id
+        -- this results in getting price band
+       SELECT PRICE_BAND_ID INTO associatedPriceBand FROM TARRIFF WHERE TARRIFF_ID = currentTarriffId;
+       
+       -- determine the measure unit and apply it to our reservation interval
+       
+      END IF;
+
+    END LOOP;
+
+  EXCEPTION
+  WHEN OTHERS THEN
+     RETURN FN_CALC_PRICE(from_date,TO_DATE);
+
+END fn_calc_price;
+
+END pkg_charging;
